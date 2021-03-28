@@ -22,6 +22,5 @@ app.component('Menubar', Menubar);
 app.component('Button', Button);
 app.component('InputText', InputText);
 app.component('InputNumber', InputNumber);
-app.component('InputMask', InputMask);
 
 app.mount('#app');

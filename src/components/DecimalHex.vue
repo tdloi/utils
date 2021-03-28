@@ -112,9 +112,9 @@ export default defineComponent({
         });
     },
 
-    handleInput(event: HTMLInputElement) {
+    handleInput(event: Event) {
       // input number only update on blur
-      this.state.decimal = parseInt(event.value);
+      this.state.decimal = parseInt((event.target as HTMLInputElement).value);
     },
   },
 });

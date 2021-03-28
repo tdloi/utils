@@ -87,9 +87,9 @@ export default defineComponent({
   },
 
   methods: {
-    handleInput(event: HTMLInputElement) {
+    handleInput(event: Event) {
       // input number only update on blur
-      this.epoch = parseInt(event.value);
+      this.epoch = parseInt((event.target as HTMLInputElement).value);
     },
     handleReset() {
       this.epoch = dayjs.utc().unix();
