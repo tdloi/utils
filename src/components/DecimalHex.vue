@@ -16,6 +16,7 @@
               state.copied.decimal === false ? 'pi pi-copy' : 'pi pi-check'
             "
             class="p-button-lg"
+            :disabled="state.copied.decimal"
             @click="handleCopy('decimal')"
           /></div
       ></label>
@@ -27,6 +28,7 @@
           <Button
             :icon="state.copied.hex === false ? 'pi pi-copy' : 'pi pi-check'"
             class="p-button-lg"
+            :disabled="state.copied.hex"
             @click="handleCopy('hex')"
           />
         </div>

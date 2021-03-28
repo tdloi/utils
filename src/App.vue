@@ -1,12 +1,14 @@
 <template>
   <Header />
   <div class="wrapper">
+    <EpochUTC />
     <DecimalHex />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import EpochUTC from './components/EpochUTC.vue';
 import DecimalHex from './components/DecimalHex.vue';
 import Header from './components/Header.vue';
 
@@ -14,6 +16,7 @@ export default defineComponent({
   name: 'App',
   components: {
     Header,
+    EpochUTC,
     DecimalHex,
   },
 });
@@ -31,6 +34,9 @@ fieldset {
 }
 a {
   text-decoration: none;
+  color: #2c3e50;
+}
+a:visited {
   color: #2c3e50;
 }
 </style>
