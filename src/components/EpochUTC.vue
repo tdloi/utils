@@ -89,7 +89,10 @@ export default defineComponent({
   methods: {
     handleInput(event: Event) {
       // input number only update on blur
-      this.epoch = parseInt((event.target as HTMLInputElement).value);
+      this.epoch = parseInt(
+        // this is result of PrimeVue messing with event type :)
+        ((event as any).originalEvent.target as HTMLInputElement).value
+      );
     },
     handleReset() {
       this.epoch = dayjs.utc().unix();

@@ -5,7 +5,6 @@ import Fieldset from 'primevue/fieldset';
 import Menubar from 'primevue/menubar';
 import Button from 'primevue/button';
 import InputText from 'primevue/inputtext';
-import InputMask from 'primevue/inputmask';
 import InputNumber from 'primevue/inputnumber';
 
 import 'modern-normalize/modern-normalize.css';

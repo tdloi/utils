@@ -114,7 +114,10 @@ export default defineComponent({
 
     handleInput(event: Event) {
       // input number only update on blur
-      this.state.decimal = parseInt((event.target as HTMLInputElement).value);
+      this.state.decimal = parseInt(
+        // this is result of PrimeVue messing with event type :)
+        ((event as any).originalEvent.target as HTMLInputElement).value
+      );
     },
   },
 });
